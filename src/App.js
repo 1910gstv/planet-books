@@ -1,16 +1,17 @@
-import "./App.css";
-import logo from "./img/logo.svg";  
+import Header from "./components/Header";
+import styled from "styled-components";
+
+const AppContainer = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #002F52, #326589);
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="logo">
-          <img src={logo} alt="logo-planet-books"></img>
-          <p>Planet Books</p>
-        </div>
-      </header>
-    </div>
+    <AppContainer>
+      <Header/>
+    </AppContainer>
   );
 }
 
